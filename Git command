@@ -1,0 +1,19 @@
+简易的命令行入门教程:
+
+Git 全局设置:
+
+git config --global user.name "xxxx"   //不带--global即为当前项目
+git config --global user.email "xxxx@xxx.com"
+
+创建 git 仓库:
+git init
+touch README.md
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:xxxx/xxxxx.git
+git push -u origin master
+
+已有项目
+cd existing_git_repo
+git remote add origin git@github.com:xxxx/xxxxxx.git
+git push -u origin master
