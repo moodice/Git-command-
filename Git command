@@ -1,19 +1,25 @@
 简易的命令行入门教程:
 
-Git 全局设置:
+（1）Git 全局设置:
 
 git config --global user.name "xxxx"   //不带--global即为当前项目
 git config --global user.email "xxxx@xxx.com"
+git status //查看仓库状态
 
-创建 git 仓库:
-git init
+（2）创建 git 仓库:
+
+mkdir demo1 //创建文件夹
+cd demo1 
+git init //此为隐藏文件夹，本地仓库
 touch README.md
-git add README.md
-git commit -m "first commit"
-git remote add origin git@github.com:xxxx/xxxxx.git
+git add README.md //已经存到了暂存区 
+git commit -m "first commit" //存到GitHub 添加信息
+git remote add origin git@github.com:xxxx/xxxxx.git 
 git push -u origin master
 
+（3）Git 管理远程仓库：
 已有项目
 cd existing_git_repo
 git remote add origin git@github.com:xxxx/xxxxxx.git
 git push -u origin master
+
